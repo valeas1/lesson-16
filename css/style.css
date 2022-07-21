@@ -530,6 +530,94 @@ button {
   border-radius: 0px 5px 5px 0px;
 }
 
+.touch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 75px;
+  padding-bottom: 100px;
+  background: #F3F3F3;
+}
+.touch__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #252B42;
+  margin-bottom: 10px;
+}
+.touch__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin-bottom: 60px;
+}
+.touch__grid-item {
+  margin-bottom: 30px;
+}
+.touch__grid-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+  padding: 50px 62px 50px 62px;
+  transition: 0.5s;
+}
+.touch__grid-card-img {
+  margin-bottom: 15px;
+}
+.touch__grid-card-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+.touch__grid-card-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #252B42;
+  margin: 15px 0;
+}
+.touch__grid-card-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #FFA62B;
+  border: 1px solid #FFA62B;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.touch__grid-card:hover {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #252B42;
+  color: #FFFFFF;
+}
+.touch__grid-card:hover .touch__grid-card-img path {
+  fill: #FFFFFF;
+}
+.touch__grid-card:hover .touch__grid-card-link {
+  color: #FFFFFF;
+}
+.touch__grid-card:hover .touch__grid-card-title {
+  color: #FFFFFF;
+}
+.touch__grid-card:hover .touch__grid-card-btn {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
 @media screen and (min-width: 490px) and (max-width: 767px) {
   .advice__card {
     display: flex;
@@ -739,5 +827,32 @@ button {
   }
   .subscribe__form {
     width: 50%;
+  }
+  .touch-wrap {
+    background: #F3F3F3;
+  }
+  .touch {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .touch__title {
+    font-size: 40px;
+  }
+  .touch__text {
+    width: 50%;
+    margin-bottom: 80px;
+  }
+  .touch__grid {
+    align-self: stretch;
+    display: flex;
+  }
+  .touch__grid-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transform: 0.5s;
+  }
+  .touch__grid-item:hover {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
