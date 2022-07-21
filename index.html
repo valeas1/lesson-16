@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body class="body">
+    <div class="header-wrap">
+        <header class="header conteiner">
+            <a class="header__logo" href="#">Indicorp</a>
+            <nav class="header__menu">
+                <a class="header__menu-link" href="#">Home</a>
+                <a class="header__menu-link" href="#">Product</a>
+                <a class="header__menu-link" href="#">Pricing</a>
+                <a class="header__menu-link" href="#">Contact</a>
+            </nav>
+            <div class="header__btn-wrap">
+                <button class="header__search">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5554 16.4665L23.9562 22.9222C24.1812 23.1493 24.3075 23.4572 24.3074 23.7782C24.3073 24.0992 24.1807 24.4071 23.9556 24.634C23.7305 24.8609 23.4252 24.9883 23.1069 24.9882C22.7886 24.9881 22.4834 24.8604 22.2584 24.6334L15.8576 18.1777C13.9441 19.6724 11.5379 20.3758 9.12853 20.1448C6.71912 19.9138 4.48746 18.7657 2.88755 16.9341C1.28763 15.1024 0.439652 12.7249 0.516107 10.2851C0.592562 7.84528 1.58771 5.52648 3.29911 3.80042C5.0105 2.07435 7.30959 1.07067 9.72866 0.993565C12.1477 0.916455 14.5051 1.77171 16.3211 3.38533C18.1372 4.99895 19.2755 7.24974 19.5046 9.67981C19.7336 12.1099 19.0362 14.5367 17.5542 16.4665H17.5554ZM10.0302 17.7877C11.9235 17.7877 13.7392 17.0291 15.0779 15.6789C16.4166 14.3288 17.1687 12.4975 17.1687 10.588C17.1687 8.67855 16.4166 6.84728 15.0779 5.49708C13.7392 4.14689 11.9235 3.38835 10.0302 3.38835C8.13697 3.38835 6.32127 4.14689 4.98254 5.49708C3.64382 6.84728 2.89173 8.67855 2.89173 10.588C2.89173 12.4975 3.64382 14.3288 4.98254 15.6789C6.32127 17.0291 8.13697 17.7877 10.0302 17.7877V17.7877Z" fill="#737373"/>
+                    </svg>  
+                </button>
+                <button class="header__cart">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_375)">
+                        <path d="M8.23936 23.1883C9.1155 23.1883 9.82576 22.4719 9.82576 21.5883C9.82576 20.7046 9.1155 19.9883 8.23936 19.9883C7.36321 19.9883 6.65295 20.7046 6.65295 21.5883C6.65295 22.4719 7.36321 23.1883 8.23936 23.1883Z" fill="#737373"/>
+                        <path d="M19.3442 23.1883C20.2204 23.1883 20.9306 22.4719 20.9306 21.5883C20.9306 20.7046 20.2204 19.9883 19.3442 19.9883C18.4681 19.9883 17.7578 20.7046 17.7578 21.5883C17.7578 22.4719 18.4681 23.1883 19.3442 23.1883Z" fill="#737373"/>
+                        <path d="M22.517 4.78825H4.9238L4.27338 1.42825C4.2363 1.24483 4.13661 1.08033 3.99168 0.963391C3.84675 0.846451 3.66574 0.784474 3.48018 0.788249H0.307373V2.38825H2.82975L5.85978 17.7483C5.89686 17.9317 5.99655 18.0962 6.14148 18.2131C6.28641 18.33 6.46742 18.392 6.65298 18.3883H20.9306V16.7882H7.30341L6.65298 13.5882H20.9306C21.114 13.5928 21.2932 13.5331 21.4378 13.4193C21.5824 13.3055 21.6835 13.1447 21.7238 12.9642L23.3102 5.76425C23.3368 5.64555 23.3362 5.5223 23.3084 5.40387C23.2806 5.28545 23.2264 5.17498 23.1499 5.08087C23.0735 4.98675 22.9767 4.91148 22.867 4.86077C22.7573 4.81006 22.6376 4.78526 22.517 4.78825ZM20.296 11.9882H6.35157L5.24108 6.38825H21.5255L20.296 11.9882Z" fill="#737373"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1_375">
+                        <rect width="23.796" height="22.4002" fill="white" transform="translate(0.307373 0.788086)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <button class="header__burger">
+                    <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.670044 0.131104H23.3329V2.41682H0.670044V0.131104ZM6.33577 5.84539H23.3329V8.1311H6.33577V5.84539ZM13.4179 11.5597H23.3329V13.8454H13.4179V11.5597Z" fill="#737373"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <section class="empower conteiner">
+            <div class="empower__top-block">
+                <h1 class="empower__top-block-title">Empower your business</h1>
+                <p class="empower__top-block-text">
+                    We know how large 
+                    objects will act, but things 
+                    on a small scale just do 
+                    not act that way.
+                </p>
+                <a class="btn empower__btn-one" href="#">Get Quote Now</a>
+                <a class="btn btn--blue empower__btn-two" href="#">Learn More</a>
+            </div>
+            <div class="empower__bottom-block">
+                <div class="empower__bottom-block-wrap">
+                    <a href="#">
+                        <article class="empower__bottom-block-card">
+                            <svg width="48" height="41" viewBox="0 0 48 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M42.5886 8.52529H37.519V3.45567C37.519 2.55931 37.1629 1.69966 36.5291 1.06583C35.8953 0.432007 35.0356 0.0759277 34.1393 0.0759277H13.8608C12.9644 0.0759277 12.1048 0.432007 11.4709 1.06583C10.8371 1.69966 10.481 2.55931 10.481 3.45567V8.52529H5.41142C4.06687 8.52529 2.77739 9.05941 1.82665 10.0102C0.875916 10.9609 0.341797 12.2504 0.341797 13.5949V37.2531C0.341797 38.1495 0.697876 39.0092 1.3317 39.643C1.96553 40.2768 2.82518 40.6329 3.72154 40.6329H44.2785C45.1749 40.6329 46.0345 40.2768 46.6683 39.643C47.3022 39.0092 47.6582 38.1495 47.6582 37.2531V13.5949C47.6582 12.2504 47.1241 10.9609 46.1734 10.0102C45.2227 9.05941 43.9332 8.52529 42.5886 8.52529ZM13.8608 3.45567H34.1393V8.52529H13.8608V3.45567ZM44.2785 37.2531H3.72154V22.0443H17.2405V30.4936H30.7595V22.0443H44.2785V37.2531ZM20.6203 22.0443H27.3798V27.1139H20.6203V22.0443ZM3.72154 18.6645V13.5949C3.72154 13.1467 3.89958 12.7169 4.2165 12.4C4.53341 12.0831 4.96323 11.905 5.41142 11.905H42.5886C43.0368 11.905 43.4666 12.0831 43.7836 12.4C44.1005 12.7169 44.2785 13.1467 44.2785 13.5949V18.6645H3.72154Z" fill="#00A0C1"/>
+                            </svg>
+                            <h3 class="empower__bottom-block-card-title">Business Growing</h3>
+                            <p class="empower__bottom-block-card-text">
+                                We focus on ergonomics and 
+                                meeting you where you work.
+                            </p>
+                        </article>
+                    </a>
+                </div>
+                <div class="empower__bottom-block-wrap">
+                    <a href="#">
+                        <article class="empower__bottom-block-card">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_407)">
+                                <path opacity="0.15" d="M43.15 13.7502H3.85007C3.83207 13.7502 3.82007 13.7621 3.82007 13.7799V19.1851C3.82007 22.7294 6.76007 25.6039 10.3781 25.6039C12.8201 25.6039 14.9501 24.3 16.0841 22.3619C16.2581 22.0597 16.5881 21.87 16.9421 21.87C17.2961 21.87 17.6201 22.0597 17.8001 22.3619C18.9281 24.3 21.0581 25.6039 23.5001 25.6039C25.9481 25.6039 28.084 24.2941 29.206 22.3501C29.38 22.0537 29.698 21.87 30.04 21.87H30.076C30.424 21.87 30.736 22.0537 30.91 22.3501C32.038 24.2941 34.174 25.6039 36.622 25.6039C40.24 25.6039 43.18 22.7294 43.18 19.1851V13.7799C43.18 13.7621 43.168 13.7502 43.15 13.7502Z" fill="#00A0C1"/>
+                                <path d="M45.7 9.48885V1.89659C45.7 0.847537 44.842 0 43.78 0H3.22003C2.15803 0 1.30004 0.847537 1.30004 1.89659V9.48885C0.298037 9.54812 -0.499963 10.372 -0.499963 11.3795V19.1851C-0.503805 20.6197 -0.209747 22.0398 0.364037 23.3576C0.622036 23.9622 0.940036 24.5311 1.30004 25.0705V45.518C1.30004 46.5612 2.15803 47.4146 3.22003 47.4146H43.78C44.842 47.4146 45.7 46.5671 45.7 45.518V25.0705C46.0657 24.5298 46.379 23.9563 46.636 23.3576C47.206 22.036 47.5 20.6313 47.5 19.1851V11.3795C47.5 10.372 46.702 9.54812 45.7 9.48885ZM5.62003 4.26732H41.38V9.48293H5.62003V4.26732ZM27.34 43.1532H19.66V36.9834H27.34V43.1532ZM41.404 43.1532H31.18V35.0868C31.18 34.0378 30.322 33.1902 29.26 33.1902H17.74C16.678 33.1902 15.82 34.0378 15.82 35.0868V43.1532H5.62003V28.7985C5.79403 28.8814 5.97403 28.9644 6.16003 29.0355C7.49803 29.5927 8.92003 29.8712 10.384 29.8712C11.848 29.8712 13.264 29.5927 14.608 29.0355C15.436 28.6918 16.216 28.2532 16.93 27.7257C16.942 27.7198 16.954 27.7198 16.966 27.7257C17.6822 28.2554 18.4622 28.6954 19.288 29.0355C20.626 29.5927 22.048 29.8712 23.512 29.8712C24.976 29.8712 26.392 29.5927 27.736 29.0355C28.564 28.6918 29.344 28.2532 30.058 27.7257C30.07 27.7198 30.082 27.7198 30.094 27.7257C30.8102 28.2554 31.5902 28.6954 32.416 29.0355C33.754 29.5927 35.176 29.8712 36.64 29.8712C38.104 29.8712 39.52 29.5927 40.864 29.0355C41.044 28.9585 41.224 28.8814 41.404 28.7985V43.1532V43.1532ZM43.18 19.1851C43.18 22.7294 40.24 25.6039 36.622 25.6039C34.174 25.6039 32.038 24.2941 30.91 22.3501C30.736 22.0537 30.424 21.87 30.076 21.87H30.04C29.698 21.87 29.38 22.0537 29.206 22.3501C28.6304 23.3417 27.7992 24.1652 26.797 24.7367C25.7948 25.3082 24.6572 25.6074 23.5 25.6039C21.058 25.6039 18.928 24.3 17.8 22.3619C17.62 22.0597 17.296 21.87 16.942 21.87C16.588 21.87 16.258 22.0597 16.084 22.3619C15.505 23.3498 14.6728 24.1695 13.6711 24.7387C12.6694 25.3078 11.5336 25.6062 10.378 25.6039C6.76003 25.6039 3.82003 22.7294 3.82003 19.1851V13.7799C3.82003 13.7621 3.83203 13.7502 3.85003 13.7502H43.15C43.168 13.7502 43.18 13.7621 43.18 13.7799V19.1851Z" fill="#00A0C1"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_407">
+                                <rect width="48" height="47.4146" fill="white" transform="translate(-0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <h3 class="empower__bottom-block-card-title">Web Development</h3>
+                            <p class="empower__bottom-block-card-text">
+                                Just type what's on your mind 
+                                and we'll get you there.
+                            </p>
+                        </article>
+                    </a>
+                </div>
+                <div class="empower__bottom-block-wrap">
+                    <a href="#">
+                        <article class="empower__bottom-block-card">
+                            <svg width="48" height="38" viewBox="0 0 48 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_415)">
+                                <path d="M29.642 8.62415H41.6398V12.0695H29.642V8.62415Z" fill="#00A0C1"/>
+                                <path d="M29.642 17.2375H41.6398V20.6828H29.642V17.2375Z" fill="#00A0C1"/>
+                                <path d="M29.642 25.8506H41.6398V29.296H29.642V25.8506Z" fill="#00A0C1"/>
+                                <path d="M45.0679 0.0111084H3.93235C3.02348 0.0120205 2.15209 0.375302 1.50942 1.02123C0.866752 1.66715 0.505302 2.54295 0.504395 3.45643V34.4643C0.505302 35.3778 0.866752 36.2536 1.50942 36.8995C2.15209 37.5454 3.02348 37.9087 3.93235 37.9096H45.0679C45.9766 37.9082 46.8477 37.5448 47.4903 36.899C48.1329 36.2532 48.4945 35.3776 48.4958 34.4643V3.45643C48.4949 2.54295 48.1335 1.66715 47.4908 1.02123C46.8481 0.375302 45.9767 0.0120205 45.0679 0.0111084ZM3.93235 3.45643H22.7861V34.4643H3.93235V3.45643ZM26.2141 34.4643V3.45643H45.0679L45.0713 34.4643H26.2141Z" fill="#00A0C1"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_415">
+                                <rect width="48" height="37.92" fill="white" transform="translate(0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <h3 class="empower__bottom-block-card-title">Business Growing</h3>
+                            <p class="empower__bottom-block-card-text">
+                                The quick fox jumps over the 
+                                lazy dog
+                            </p>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <main class="main">
+        <div class="choose-wrap">
+            <section class="choose conteiner">
+                <h2 class="choose__title">Why choose us</h2>
+                <p class="choose__text">
+                    Problems trying to resolve 
+                    the conflict between the 
+                    two major realms of Classical 
+                    physics: Newtonian mechanics
+                </p>
+                <div class="choose__grid">
+                    <div class="choose__grid-item">
+                        <article class="choose__grid-card choose__grid-card--01">
+                            <h3 class="choose__grid-card-title">3K</h3>
+                            <p class="choose__grid-card-text">cases done</p>
+                        </article>
+                    </div>
+                    <div class="choose__grid-item">
+                        <article class="choose__grid-card choose__grid-card--02">
+                            <h3 class="choose__grid-card-title">45</h3>
+                            <p class="choose__grid-card-text">happy customers</p>
+                        </article>
+                    </div>
+                    <div class="choose__grid-item">
+                        <article class="choose__grid-card choose__grid-card--03">
+                            <h3 class="choose__grid-card-title">12+</h3>
+                            <p class="choose__grid-card-text">award winning</p>
+                        </article>
+                    </div>
+                    <div class="choose__grid-item">
+                        <article class="choose__grid-card choose__grid-card--04">
+                            <h3 class="choose__grid-card-title">1.5K</h3>
+                            <p class="choose__grid-card-text">cases done</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="advice-wrap">
+            <section class="advice conteiner">
+                <h2 class="advice__title">Practice Advice</h2>
+                <p class="advice__text">
+                    Problems trying to resolve 
+                    the conflict between the 
+                    two major realms of Classical 
+                    physics: Newtonian mechanics 
+                </p>
+                <div class="advice__grid">
+                    <div class="advice__grid-item">
+                        <article class="advice__card">
+                            <h3 class="advice__card-title">A single source 
+                                of truth</h3>
+                            <p class="advice__card-text">
+                                Newton thought that 
+                                light was made up of 
+                                particles, but then it 
+                                was discovered
+                            </p>
+                            <img class="advice__card-img" src="img/advice-card-img-01.jpg" alt="">
+                        </article>
+                    </div>
+                    <div class="advice__grid-item">
+                        <article class="advice__card">
+                            <h3 class="advice__card-title">Fastest way to 
+                                organize</h3>
+                            <p class="advice__card-text">
+                                “Quantum mechanics” 
+                                is the description of the 
+                                behaviour of matter
+                            </p>
+                            <img class="advice__card-img" src="img/advice-card-img-02.jpg" alt="">
+                        </article>
+                    </div>
+                    <div class="advice__grid-item">
+                        <article class="advice__card">
+                            <h3 class="advice__card-title">Fastest way to 
+                                take action</h3>
+                            <p class="advice__card-text">
+                                They describe a 
+                                universe consisting of 
+                                <span>bodies moving</span>
+                            </p>
+                            <img class="advice__card-img" src="img/advice-card-img-03.jpg" alt="">
+                        </article>
+                    </div>
+                    <div class="advice__grid-item">
+                        <article class="advice__card">
+                            <h3 class="advice__card-title">Work better 
+                                together</h3>
+                            <p class="advice__card-text">
+                                They finally obtained 
+                                a consistent description 
+                                of the behaviour 
+                            </p>
+                            <img class="advice__card-img" src="img/advice-card-img-04.jpg" alt="">
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="expert-wrap">
+            <section class="expert conteiner">
+                <h2 class="expert__title">
+                    We take care 
+                    customers our 
+                    all expert here.
+                </h2>
+                <h2 class="expert__title expert__title-desktop">We are providing best 
+                    business service.</h2>
+                <p class="expert__text">
+                    Problems trying to resolve 
+                    the conflict between the 
+                    two major realms of Classical 
+                    physics: Newtonian mechanics 
+                </p>
+                <div class="expert__main-wrap">
+                    <div class="expert__video">
+                        <img class="expert__video-img" src="img/expert-video-img.jpg" alt="">
+                        <button class="expert__video-btn"><img src="img/video-arrow.svg" alt=""></button>
+                    </div>
+                    <div class="expert__main">
+                        <h3 class="expert__main-title">Most trusted in 
+                            our field</h3>
+                        <p class="expert__main-text">
+                            Most calendars are designed for teams. Slate 
+                            is designed for freelancers who want a 
+                            simple way to plan their schedule.
+                        </p>
+                        <article class="expert__main-card expert__main-card--01">
+                            <p class="expert__main-card-title">the quick fox jumps over the lazy 
+                                dog</p>
+                            <p class="expert__main-card-text">Things on a very small scale ...</p>
+                        </article>
+                        <article class="expert__main-card expert__main-card--02">
+                            <p class="expert__main-card-title">the quick fox jumps over the lazy 
+                                dog</p>
+                            <p class="expert__main-card-text">Things on a very small scale ...</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="logos-wrap">
+            <section class="logos conteiner">
+                <h2 class="visually-hidden">logos</h2>
+                <img class="logos__img" src="img/logos-img-01.svg" alt="">
+                <img class="logos__img" src="img/logos-img-02.svg" alt="">
+                <img class="logos__img" src="img/logos-img-03.svg" alt="">
+                <img class="logos__img" src="img/logos-img-04.svg" alt="">
+                <img class="logos__img" src="img/logos-img-05.svg" alt="">
+                <img class="logos__img" src="img/logos-img-06.svg" alt="">
+            </section>
+        </div>
+        <div class="subscribe-wrap">
+                <div class="conteiner">
+                <section class="subscribe">
+                    <h2 class="subscribe__title">Subscribe For Latest Newsletter</h2>
+                    <form class="subscribe__form" action="#">
+                        <input class="subscribe__form-input" type="email" placeholder="Your Email" required>
+                        <button class="subscribe__form-btn" type="submit">Subscribe</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
