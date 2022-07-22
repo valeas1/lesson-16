@@ -40,7 +40,7 @@
 }
 :root {
   --bg-color1: #FAFAFA;
-  --color-hover: wheat;
+  --color-hover: #FFA62B;
 }
 a {
     text-decoration: none;
@@ -519,6 +519,10 @@ button {
             background: #FFA62B;
             padding: 15px 22.5px;
             border-radius: 0px 5px 5px 0px;
+            &:hover {
+                color: white;
+                background: #16697A;
+            }
         }
     }
 }
@@ -557,8 +561,18 @@ button {
             flex-direction: column;
             align-items: center;
             background: #FFFFFF;
-            padding: 50px 62px 50px 62px;
-            transition: 0.5s;
+            padding: 137px 62px 50px 62px;
+            background-repeat: no-repeat;
+            background-position: center 50px;
+            &--01 {
+                background-image: url(../img/touch-card-img-01.svg);
+            }
+            &--02 {
+                background-image: url(../img/touch-card-img-02.svg);
+            }
+            &--03 {
+                background-image: url(../img/touch-card-img-03.svg);
+            }
             &-img {
                 margin-bottom: 15px;
             }
@@ -569,6 +583,12 @@ button {
                 text-align: center;
                 letter-spacing: 0.2px;
                 color: #252B42;
+                &:hover {
+                    color: var(--color-hover);
+                }
+                &--dark-blue {
+                    color: white;
+                }
             }
             &-title {
                 font-weight: 700;
@@ -578,6 +598,9 @@ button {
                 letter-spacing: 0.1px;
                 color: #252B42;
                 margin: 15px 0;
+                &--dark-blue {
+                    color: white;
+                }
             }
             &-btn {
                 font-weight: 600;
@@ -589,30 +612,150 @@ button {
                 border: 1px solid #FFA62B;
                 border-radius: 5px;
                 padding: 10px 20px;
+                &:hover {
+                    color: white;
+                    background: #FFA62B;
+                }
+                &--dark-blue {
+                    color: white;
+                    border-color: white;
+                    &:hover {
+                        color: #252B42;
+                        background: #FFFFFF;
+                    }
+                }
             }
-            &:hover {
-                padding-top: 80px;
-                padding-bottom: 80px;
-                background: #252B42;
-                color: #FFFFFF;
-            }
-            &:hover .touch__grid-card-img path {
-                fill: #FFFFFF;
-            }
-            &:hover .touch__grid-card-link {
-                color: #FFFFFF;
-            }
-            &:hover .touch__grid-card-title {
-                color: #FFFFFF;
-            }
-            &:hover .touch__grid-card-btn {
-                color: #FFFFFF;
-                border-color: #FFFFFF;
+            &--dark-blue {
+                padding: 167px 62px 80px 62px;
+                background-color: #252B42;
             }
         }
     }
 }
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__left-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        width: 75%;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #252B42;
+        margin-bottom: 10px;
+    }
+    &__text {
+        width: 60%;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #737373;
+        margin-bottom: 50px;
+    }
+    &__btn {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+        background: #FFA62B;
+        border-radius: 5px;
+        padding: 15px 38px;
+        &:hover {
+            background: #16697A;
+        }
+    }
+}
+.footer {
+    &__top-block {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &-wrap {
+            background: #16697A;
+        }
+        &-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            &-title {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: #FFFFFF;
+                margin-bottom: 20px;
+            }
+            &-link {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                color: #FFFFFF;
+                margin-bottom: 10px;
+                &--01 {
+                    display: flex;
+                    &::before {
+                        content: url(../img/footer-img-01.svg);
+                        margin-right: 10px;
+                    }
+                }
+                &--02 {
+                    display: flex;
+                    &::before {
+                        content: url(../img/footer-img-02.svg);
+                        margin-right: 10px;
+                    }
+                }
+                &--03 {
+                    display: flex;
+                    &::before {
+                        content: url(../img/footer-img-03.svg);
+                        margin-right: 10px;
+                    }
+                }
+                &:hover {
+                    color: var(--color-hover);
+                }
+            }
+        }
 
+    }
+    &__bottom-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 55px;
+        &-text {
+            width: 70%;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: #737373;
+            margin-bottom: 50px;
+        }
+        &-social {
+            a {
+                margin: 0 10px;
+            }
+        }
+    }
+}
 
 
 
@@ -848,15 +991,42 @@ button {
         }
         &__grid {
             align-self: stretch;
+            align-items: center;
             display: flex;
             &-item {
-                padding-top: 30px;
-                padding-bottom: 30px;
-                transform: 0.5s;
-                &:hover {
-                    padding-top: 0;
-                    padding-bottom: 0;
-                }
+                width: 33.333%;
+            }
+        }
+    }
+    .contact-us {
+        flex-direction: row;
+        &__left-block {
+            align-items: flex-start;
+        }
+        &__title {
+            width: 100%;
+        }
+        &__text {
+            width: 100%;
+            text-align: start;
+            margin-bottom: 0;
+        }
+        &__btn {
+            margin-left: auto;
+        }
+    }
+    .footer {
+        &__top-block {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__bottom-block {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 25px;
+            &-text {
+                text-align: start;
+                margin-bottom: 0;
             }
         }
     }
