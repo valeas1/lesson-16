@@ -74,24 +74,24 @@ button {
     height: 48px;
     background: #FFA62B;
     border-radius: 37px;
-}
-.btn:hover {
-    background: #16697A;
-}
-.btn--blue {
-    color: #00A0C1;
-    width: 154px;
-    height: 48px;
-    border: 1px solid #00A0C1;
-    background-color: transparent;
-}
-.btn--blue:hover {
-    background: #E2E2E2;
+    &:hover {
+        background: #16697A;
+    }
+    &--blue {
+        color: #00A0C1;
+        width: 154px;
+        height: 48px;
+        border: 1px solid #00A0C1;
+        background-color: transparent;
+        &:hover {
+            background: #E2E2E2;
+        }
+    }
 }
 .body {
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-style: normal;
-    }
+}
 .conteiner {
     max-width: 1076px;
     min-width: 375px;
@@ -113,7 +113,7 @@ button {
         color: #252B42;
     }
     &__menu {
-        padding-top: 85px;
+        padding-top: 95px;
         padding-bottom: 30px;
         width: 100%;
         display: flex;
@@ -142,13 +142,13 @@ button {
 }
 .empower {
     background: #E9E9E9;
-    padding-top: 80px;
-    padding-bottom: 205px;
+    padding-top: 124px;
+    padding-bottom: 176px;
     &__top-block {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90%;
+        width: 92%;
         margin: 0 auto 80px auto;
         &-title {
             font-weight: 700;
@@ -184,7 +184,7 @@ button {
             background: #FFFFFF;
             box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
             svg {
-                margin-bottom: 14px;
+                margin-bottom: 11px;
             }
             &-title {
                 font-weight: 700;
@@ -265,7 +265,7 @@ button {
                 line-height: 57px;
                 letter-spacing: 0.2px;
                 color: #252B42;
-                margin-bottom: 20px;
+                margin-bottom: 8px;
             }
             &-text {
                 font-weight: 700;
@@ -295,7 +295,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 98px;
+    padding-top: 68px;
     padding-bottom: 106px;
     background: #F3F3F3;
     &__title {
@@ -466,9 +466,6 @@ button {
         margin-bottom: 60px;
     }
 }
-.subscribe-wrap {
-    background: #16697A;
-}
 .subscribe {
     display: flex;
     flex-direction: column;
@@ -476,6 +473,9 @@ button {
     padding-top: 30px;
     padding-bottom: 30px;
     background: #16697A;
+    &-wrap {
+        background: #16697A;
+    }
     &__title {
         font-weight: 700;
         font-size: 24px;
@@ -752,6 +752,9 @@ button {
         &-social {
             a {
                 margin: 0 10px;
+                &:hover img {
+                    opacity: 80%;
+                }
             }
         }
     }
@@ -760,6 +763,16 @@ button {
 
 
 @media screen and (min-width: 490px) and (max-width:767px) {
+    .advice__grid {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+    .advice__grid-item {
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .advice__card {
         display: flex;
         flex-direction: column;
@@ -773,21 +786,25 @@ button {
         width: 100%;
         text-align: center;
     }
-    .advice__card-img {
-        width: auto;
+    .footer__top-block {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer__top-block-card {
+        width: 50%;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .header-wrap {
-        background: #FAFAFA;
-        background-image: url(../img/bg-img-lg.jpg);
-        background-repeat: no-repeat;
-        background-position: top center;
-    }
     .header {
         padding-bottom: 36px;
         background-color: transparent;
+        &-wrap {
+            background: #FAFAFA;
+            background-image: url(../img/bg-img-lg.jpg);
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
         &__menu {
             display: flex;
             order: 0;
@@ -852,11 +869,11 @@ button {
             }
         }
     }
-    .choose-wrap {
-        background: linear-gradient(180deg, #FAFAFA 0%, #E2E2E2 100%);
-    }
     .choose {
         background-color: transparent;
+        &-wrap {
+            background: linear-gradient(180deg, #FAFAFA 0%, #E2E2E2 100%);
+        }
         &__title {
             font-size: 40px;
             line-height: 57px;
@@ -873,13 +890,13 @@ button {
             }
         }
     }
-    .advice-wrap {
-        background: #FAFAFA;
-    }
     .advice {
         padding-top: 125px;
         padding-bottom: 80px;
         background-color: transparent;
+        &-wrap {
+            background: #FAFAFA;
+        }
         &__title {
             font-size: 40px;
         }
@@ -912,12 +929,12 @@ button {
             }
         }
     }
-    .expert-wrap {
-        background-image: url(../img/expert-gb.jpg);
-        background-repeat: no-repeat;
-        background-position: center top;
-    }
     .expert {
+        &-wrap {
+            background-image: url(../img/expert-gb.jpg);
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
         &__title {
             display: none;
         }
@@ -936,14 +953,14 @@ button {
         &__video {
             margin-right: 35px;
             margin-bottom: 0;
+            &-img {
+                height: 100%;
+            }
         }
         &__main {
             width: 40%;
             padding-top: 20px;
         }
-    }
-    .logos-wrap {
-        background: #FAFAFA;
     }
     .logos {
         flex-direction: row;
@@ -951,14 +968,13 @@ button {
         align-items: center;
         padding-top: 50px;
         padding-bottom: 50px;
+        &-wrap {
+            background: #FAFAFA;
+        }
         &__img {
             width: 10%;
             margin-bottom: 0;
         }
-    }
-    .subscribe-wrap {
-        padding: 20px 0;
-        background: linear-gradient(#FAFAFA 50%, #252B42 50%);
     }
     .subscribe {
         flex-direction: row;
@@ -967,6 +983,10 @@ button {
         border-radius: 2px;
         padding-right: 50px;
         padding-left: 50px;
+        &-wrap {
+            padding: 20px 0;
+            background: linear-gradient(#FAFAFA 50%, #252B42 50%);
+        }
         &__title {
             width: 40%;
             text-align: start;
@@ -976,12 +996,12 @@ button {
             width: 50%;
         }
     }
-    .touch-wrap {
-        background: #F3F3F3;
-    }
     .touch {
         padding-top: 80px;
         padding-bottom: 80px;
+        &-wrap {
+            background: #F3F3F3;
+        }
         &__title {
             font-size: 40px;
         }
